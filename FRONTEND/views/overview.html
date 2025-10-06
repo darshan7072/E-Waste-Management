@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../public/css/overview.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+<!--         <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#" class="active">Overview</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Rewards</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Ebin Finder</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Place Order</a></li>
+                <li><a href="#" class="logout">Logout</a></li>
+            </ul>
+        </aside>
+ -->
+        <!-- Main Content -->
+        <main class="content">
+            <h1>Overview</h1>
+            <div class="stats">
+                <div class="card">
+                    <h2>E-Waste Contributions</h2>
+                    <canvas id="wasteChart" width="150" height="150"></canvas>
+                </div>
+                <div class="card">
+                    <h2>Monthly Contributions</h2>
+                    <canvas id="monthlyChart"></canvas>
+                </div>
+            </div>
+
+            <div class="orders">
+                <div class="card">
+                    <h2>Recent Orders</h2>
+                    <p>#12345 - 2023-06-15 <span class="badge in-transit">In Transit</span></p>
+                    <p>#12346 - 2023-06-10 <span class="badge delivered">Delivered</span></p>
+                    <p>#12347 - 2023-06-18 <span class="badge processing">Processing</span></p>
+                </div>
+            </div>
+
+            <div class="notifications">
+                <div class="card">
+                    <h2>Notifications</h2>
+                    <p>📦 Your order #12345 has been shipped <span class="date">2023-06-16</span></p>
+                    <p>♻️ New recycling event in your area <span class="date">2023-06-14</span></p>
+                    <p>🏆 You've earned 100 reward points <span class="date">2023-06-12</span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../public/js/overview.js"></script>
+</body>
+</html>

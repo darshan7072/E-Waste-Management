@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Place E-Waste Collection Order</title>
+    <link rel="stylesheet" href="../public/css/placeorder.css" />
+  </head>
+  <body>
+    <!-- <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Rewards</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Ebin Finder</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li class="active"><a href="#">Place Order</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div> -->
+
+    <div class="container">
+      <div class="main-content">
+        <h1>Place E-Waste Collection Order</h1>
+        <div class="form-container">
+          <form id="orderForm">
+            <label for="ewaste-type">E-Waste Type</label>
+            <select id="ewaste-type" name="ewaste-type">
+              <option value="">Select e-waste type</option>
+              <option value="battery">Battery</option>
+              <option value="mobile">Mobile</option>
+              <option value="laptop">Laptop</option>
+              <option value="others">Others</option>
+            </select>
+
+            <label for="description">Description</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              placeholder="Briefly describe the e-waste items"></textarea>
+
+            <div class="flex-row">
+              <div>
+                <label for="collection-date">Preferred Collection Date</label>
+                <input
+                  type="date"
+                  id="collection-date"
+                  name="collection-date" />
+              </div>
+              <div>
+                <label for="time-slot">Preferred Time Slot</label>
+                <input type="time" id="time-slot" name="time-slot" />
+              </div>
+            </div>
+
+            <!-- Barcode Scan Button -->
+            <button type="button" class="scan-btn" onclick="openBarcodePage()">
+                 Upload Photo 
+            </button>
+
+            <label for="address">Collection Address</label>
+            <textarea
+              id="address"
+              name="address"
+              rows="3"
+              placeholder="Enter your full address"></textarea>
+
+              <button id="submitBtn" type="submit">Place Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../public/js/placeorder.js"></script>
+  </body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Barcode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="main-content">
+            <h1>Scan Barcode</h1>
+            <p>Redirected to barcode scanning page.</p>
+            <a href="index.html" class="back-btn">← Go Back</a>
+        </div>
+    </div>
+
+</body>
+</html> -->

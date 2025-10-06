@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaf4e0;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #1A4D46;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background-color: #02BBAD;
+}
+
+/* Content */
+.content {
+  margin-left: 140px;
+  padding: 20px;
+  flex-grow: 1;
+}
+.content h1{
+  margin-left: -0px;
+}
+.h1 {
+  font-size: 24px;
+  color: #1A4D46;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stats .card {
+  flex: 1;
+}
+
+.orders .badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.in-transit {
+  background: blue;
+  color: white;
+}
+
+.delivered {
+  background: green;
+  color: white;
+}
+
+.processing {
+  background: orange;
+  color: white;
+}
+
+.notifications .date {
+  float: right;
+  font-size: 12px;
+  color: gray;
+}

@@ -1,0 +1,120 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaf4e0;
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background: #1A4D46;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+}
+.sidebar  {
+  margin : 0px;
+}
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+/* ---------------------------------------------------------------------- */
+.logout{
+ margin-top: 1rem;
+ display: flex;
+ font-size: 1.1rem;
+ border-radius: 5px;
+}
+.logout i{
+ margin-top: 28px;
+ margin-left: 0.8rem;
+}
+.logout:hover{
+  background: #02BBAD;
+}
+
+/* ---------------------------------------------------------------------------- */
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+}
+
+.sidebar ul li a:hover
+{
+  background: #02BBAD;
+}
+
+
+.content {
+  margin-left: 270px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 24px;
+  color: #1A4D46;
+  margin-left: 80px;
+}
+
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 10px 0;
+  margin-left: 80px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stats .card {
+  flex: 1;
+}
+
+.orders .badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.in-transit {
+  background: blue;
+  color: white;
+}
+
+.delivered {
+  background: green;
+  color: white;
+}
+
+.processing {
+  background: orange;
+  color: white;
+}
+
+.notifications .date {
+  float: right;
+  font-size: 12px;
+  color: gray;
+}

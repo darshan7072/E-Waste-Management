@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SEWA | Orders</title>
+  <link rel="stylesheet" href="../public/css/order.css" />
+</head>
+<body>
+  <div class="main">
+    <h1>Orders</h1>
+    
+    <div class="stats">
+      <span>Total Orders: <strong id="totalCount">--</strong></span>
+      <span>Pending: <strong id="pendingCount">--</strong></span>
+      <span>Fulfilled: <strong id="fulfilledCount">--</strong></span>
+      <input type="text" id="searchInput" placeholder="Search orders..." />
+    </div>
+
+    <div class="table-container">
+     <!-- 🔄 Loading Spinner -->
+<div id="loadingSpinner" class="spinner-container">
+  <div class="spinner"></div>
+</div>
+ <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Address</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        
+        <tbody id="orderTableBody">
+          <tr id="loadingRow"><td colspan="6">Loading orders...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="../public/js/order.js" defer></script>
+</body>
+</html>

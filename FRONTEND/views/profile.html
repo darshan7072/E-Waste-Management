@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SEWA | Profile</title>
+  <link rel="stylesheet" href="../public/css/profile.css" />
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-header">
+      <h2>User Profile</h2>
+      <button id="editBtn">✏️</button>
+    </div>
+
+    <div id="profileDetails">
+      <p><strong>Full Name:</strong> <span id="fullName"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>clean
+      
+      <p><strong>Phone:</strong> <span id="phoneNumber"></span></p>
+      <p><strong>Address:</strong> <span id="address"></span></p>
+      <p><strong>Profession:</strong> <span id="profession"></span></p>
+      <p><strong>Date Joined:</strong> <span id="joinedDate"></span></p>
+      <p><strong>Bio:</strong> <span id="bio"></span></p>
+    </div>
+
+    <form id="editForm" style="display: none;">
+      <input type="text" name="fullName" placeholder="Full Name" />
+      <input type="text" name="phoneNumber" placeholder="Phone Number" />
+      <input type="text" name="address" placeholder="Address" />
+      <input type="text" name="profession" placeholder="Profession" />
+      <textarea name="bio" placeholder="Short Bio"></textarea>
+
+      <div class="form-actions">
+        <button type="submit">💾 Save</button>
+        <button type="button" id="cancelEdit">❌ Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="../public/js/profile.js"></script>
+</body>
+</html>

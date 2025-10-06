@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="../public/css/marketplace.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <!--     <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Rewards</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Ebin Finder</a></li>
+            <li class="active"><a href="#">Marketplace</a></li>
+            <li><a href="#">Place Order</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div> -->
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="main-content">
+        <h1>Marketplace</h1>
+        <div class="product-list">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <img src="https://media-hosting.imagekit.io//b01056f934a94b73/ram.jpg?Expires=1837527144&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=vBne6IUUg2zWB8geE7OeWXuqjDShpxmLdBjIwPfHOWwFIlBRQGouNho5ZIU7NoiPEw2baOvH0itF4~9h2TpuPzt4mYBOd7hLE7zp95Ay86ZRCFRWzb7-JPLOTFNXSV3tQQWOC0n1Vm~NR4ypM0GFyx2wkLGsvFN80R4RGmv33eNytAJcroooIpnVgT2AOem5YJdPcCG9HND81fxB0h6pXQ66~OuL3fQPjyA8klVe~MuY-vXb2ytcMBRFIzC9hBA0PzGZtIQXmDjoCKIl5rlprVf8Ih~0~8IMQZy6T1CyKq-6NOjVnpG0EXY~uC-nUfycWd361kD1yQ5DH8S8asEMiQ__" alt="Refurbished RAM 8GB">
+            <h3>Refurbished RAM 8GB</h3>
+            <p class="price">₹500</p>
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Refurbished RAM 8GB', 500)">
+              🛒 Add to Cart
+            </button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <img src="https://media-hosting.imagekit.io//2ab6bb0133584f6a/hdd.jpg?Expires=1837527188&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=R2w6KxMyAFxIV38llOnJ-Syt2lMPugru1PMBSualAnWeZlHj0c7Va3sK8HkTtYdsDc1kHDfi8EQnsSsXkzVTmgJwI37J4SZ75ZUd5i8ZvPDTEnJPOLTuq3RxTsKyqJcjfz1K3VG6ZSAwLKRlvg0CEWizD73ur1OwEJdwLWQ94ReUPPjtgAbqHSUfweK23aGpBqgm3xrfx5vzKapGUmPsqDul-sujDGa2xbKu-H3zUu08u3kZWuztkCTG4uOflWwcAVqi1ahGBWJcplVjWica~GrZqyDCEqMw2GaTg1O2mMW4uFZljSmNNErB3KOYdJY-07ZhBlT-LpKpbWO2gjvUDw__" alt="Recycled 1TB HDD">
+            <h3>Recycled 1TB HDD</h3>
+            <p class="price">₹800</p>
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Recycled 1TB HDD', 800)">
+              🛒 Add to Cart
+            </button>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <img src="https://media-hosting.imagekit.io//ab8d4ccf378345ad/mouse.jpg?Expires=1837527219&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=nRw6H6RbNoGxc1Zdo8ilxSF6eoLe8v5x541zqN4j9SqNEaSxh8WFd68EphDqUUkOY8y7gASiflyp4HF6k6dSSUmnkzHz3sDtlkKWV1oXn6jjKYmJrVinT0tCTM61~rImV-a1PW72PDh5ODSmNq5IOVVV-ez6J0eM38ryZZHi7eDXV2HePMHNcK7h1~mOXOim5tcNNEb0m4pbUrcAP9SDfBHP948O1owr9FH9aexCfWLZkK~jMOLgjGV947MWDZqj2i7HjLFdUEkB4iuxK0YGkN2K1Mnh71Jc9mZglM7ptDTfl5fiB4pQqjm2ze5FfMlBjoyshlVVbpifvAIqPJq0zA__" alt="Eco-Friendly Mouse">
+            <h3>Eco-Friendly Mouse</h3>
+            <p class="price">₹300</p>
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Eco-Friendly Mouse', 300)">
+              🛒 Add to Cart
+            </button>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <img src="https://media-hosting.imagekit.io//286c0b768b8346bc/key.jpg?Expires=1837527259&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Noo06UjkbcVe1I86WuY10-KCkvZiRaIbxktpkk6E8KexX~QLKlrcG1gsqUFJ-bTKq17r0oan-ohloKBDR0JV-23qGoPihQFo8jSppZ8FuJinJnr7t1UufnfCrm4gvf8K42AYOBJi84QUqHSf-N7wpZSox1VoPHDduy2aIYZlIZyoPeaUBUejh0uU9GXTUg2lQiCusl0AVNkjUyMNecIJO02EpB4NJ3IGYayfbNtSKAfIMTmGq00LGKjQfKeksJWRSsTTHGUCUOxbbr9JwAdFCRZtb6PlIJgJK63iGh0WrYvUqWLwB9urUKXuK6r3iNZSJaKkHfhcsLGf3GsxTaQSfA__" alt="Upcycled Keyboard">
+            <h3>Upcycled Keyboard</h3>
+            <p class="price">₹600</p>
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Upcycled Keyboard', 600)">
+              🛒 Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../public/js/marketplace.js"></script>
+  </body>
+</html>

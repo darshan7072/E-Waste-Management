@@ -1,0 +1,66 @@
+body {
+    background-color: #B8E3E9;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 2rem;
+    color: #0B2E33;
+  }
+  
+  .profile-container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    padding: 2rem;
+  }
+  
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4F7C82;
+  }
+  
+  .profile-header h2 {
+    margin: 0;
+  }
+  
+  #editBtn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  #profileDetails p {
+    margin: 0.5rem 0;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 10px;
+    border: 1px solid #93B1B5;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  button[type="submit"], #cancelEdit {
+    background-color: #4F7C82;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  

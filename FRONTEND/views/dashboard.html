@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../public/css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar-container">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="overview.html" data-page="overview" class="active">Overview</a></li>
+                <li><a href="order.html" data-page="orders">Orders</a></li>
+                <li><a href="reward.html" data-page="rewards">Rewards</a></li>
+                <li><a href="profile.html" data-page="profile">Profile</a></li>
+                <li><a href="pages/ebin-finder.html" data-page="ebin">Ebin Finder</a></li>
+                <li><a href="marketplace.html" data-page="marketplace">Marketplace</a></li>
+                <li><a href="placeorder.html" data-page="place-order">Place Order</a></li>
+                <!-- <li><button onclick="logoutUser()">Logout</button></li> -->
+                <li>
+                    <!-- changes for icon option -->
+                    <div class="logout">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <a href="index.html" data-page="logout" class="logout">Logout</a>
+                    </div>
+                </li>  
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Main Content -->
+    <main class="content" id="main-content">
+        <div class="loading" id="loading" style="display:none;">
+            <div class="spinner"></div>
+            <p>Loading content...</p>
+        </div>
+        <!-- Content will be dynamically loaded here -->
+    </main>
+
+    <script
+        src ="../public/js/dashboard.js"></script>
+   
+</body>
+</html>

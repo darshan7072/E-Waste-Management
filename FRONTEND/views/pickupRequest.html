@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pickup Requests</title>
+    <link rel="stylesheet" href="../public/css/pickupRequest.css" />
+  </head>
+  <body>
+    <!-- Pickup Requests Page -->
+    <div id="pickup-requests">
+      <h2 class="text-3xl font-semibold text-[#003049] mb-6 animate-fadeIn">
+        Pickup Requests
+      </h2>
+
+      <!-- Pickup Requests List -->
+      <div
+        class="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#f77f00] animate-slideIn">
+        <h3 class="text-lg font-semibold text-[#f77f00] mb-4">
+          New Pickup Requests
+        </h3>
+        <table
+          class="w-full border-collapse border border-gray-300 shadow-lg rounded-lg overflow-hidden">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border p-3 text-left text-[#003049]">Request ID</th>
+              <th class="border p-3 text-left text-[#003049]">Customer</th>
+              <th class="border p-3 text-left text-[#003049]">Location</th>
+              <th class="border p-3 text-left text-[#003049]">Weight (Kg)</th>
+              <th class="border p-3 text-left text-[#003049]">Status</th>
+              <th class="border p-3 text-left text-[#003049]">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-left transition hover:bg-gray-200">
+              <td class="border p-3">REQ1234</td>
+              <td class="border p-3">John Doe</td>
+              <td class="border p-3">New York</td>
+              <td class="border p-3">50</td>
+              <td
+                class="border p-3 text-yellow-500 font-semibold animate-blink">
+                Pending
+              </td>
+              <td class="border p-3">
+                <button
+                  class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition">
+                  Accept
+                </button>
+                <button
+                  class="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition">
+                  Reject
+                </button>
+              </td>
+            </tr>
+            <tr class="text-left transition hover:bg-gray-200">
+              <td class="border p-3">REQ1235</td>
+              <td class="border p-3">Jane Smith</td>
+              <td class="border p-3">Los Angeles</td>
+              <td class="border p-3">120</td>
+              <td class="border p-3 text-blue-500 font-semibold animate-pulse">
+                In Progress
+              </td>
+              <td class="border p-3">
+                <button
+                  class="px-4 py-2 bg-gray-500 text-white rounded-md cursor-not-allowed">
+                  Processing...
+                </button>
+              </td>
+            </tr>
+            <tr class="text-left transition hover:bg-gray-200">
+              <td class="border p-3">REQ1236</td>
+              <td class="border p-3">Michael Lee</td>
+              <td class="border p-3">Chicago</td>
+              <td class="border p-3">90</td>
+              <td class="border p-3 text-green-500 font-semibold">Completed</td>
+              <td class="border p-3">
+                <button
+                  class="px-4 py-2 bg-gray-300 text-black rounded-md cursor-not-allowed">
+                  Completed
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="../public/js/pickupRequest.js"></script>
+  </body>
+</html>
+
+<style>
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0.5;
+    }
+  }
+  @keyframes pulse {
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  .animate-slideIn {
+    animation: slideIn 0.8s ease-in-out;
+  }
+  .animate-blink {
+    animation: blink 1s infinite;
+  }
+  .animate-pulse {
+    animation: pulse 1.5s infinite;
+  }
+
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  thead {
+    background-color: #fcbf49;
+    color: #003049;
+  }
+  tbody tr:hover {
+    background-color: #f4f4f4;
+    transition: 0.3s;
+  }
+</style>
